@@ -21,7 +21,7 @@
 
   <!-- The following libraries and polyfills are recommended to maximize browser support -->
   <!-- NOTE: you must adjust the paths as appropriate for your project -->
-      
+
   <!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
   <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
 
@@ -36,17 +36,23 @@
 
   <!-- 💁 OPTIONAL: Include prismatic.js for Magic Leap support -->
   <!--<script src="https://unpkg.com/@magicleap/prismatic@0.18.2/prismatic.min.js"></script>-->
-
+<!--<  <model-viewer src="assets/FarmHouse.gltf"
+              ios-src="assets/RocketShip_1393.usdz"
+              ar
+              auto-rotate
+              camera-controls
+              shadow-intensity="1"
+              alt="A 3D model of a rocket" background-color="#70BCD1">></script>-->
 </head>
 <body>
-  <model-viewer src="assets/RocketShip_1393.gltf" 
-                ios-src="assets/RocketShip_1393.usdz"
+
+  <model-viewer src="assets/FarmHouse.gltf"
                 ar
-                auto-rotate 
-                camera-controls 
-                shadow-intensity="1" 
-                alt="A 3D model of a rocket" background-color="#70BCD1">
-                  
+                auto-rotate
+                camera-controls
+                shadow-intensity="1"
+                alt="A 3D model of a House" background-color="#70BCD1">
+
   </model-viewer>
 </body>
 </html>
