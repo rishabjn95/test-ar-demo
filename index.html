@@ -57,7 +57,7 @@
 <body>
 
   <model-viewer id="toggle-model"
-  src="assets/models/FarmHouse.gltf"
+  src="assets/FarmHouse.gltf"
   alt="A 3D model of a shishkebab"
   ar-scale="fixed"
   background-color="#eee"
@@ -70,7 +70,7 @@
     const models = ['SM_Cabin.gltf', 'FarmHouse.gltf'];
     const toggleModel = document.querySelector('#toggle-model');
     let i = 0;
-    setInterval(() => toggleModel.setAttribute('src', `assets/models/${models[i++ % 2]}`), 2000);
+    setInterval(() => toggleModel.setAttribute('src', `assets/${models[i++ % 2]}`), 2000);
 
 </script>
 
