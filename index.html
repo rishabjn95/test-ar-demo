@@ -64,14 +64,14 @@
   shadow-intensity="1"
   camera-controls
   auto-rotate
-  play()></model-viewer>
+  ></model-viewer>
 
 <script>
     const models = ['SM_Cabin.gltf', 'FarmHouse.gltf'];
     const toggleModel = document.querySelector('#toggle-model');
     let i = 0;
     setInterval(() => toggleModel.setAttribute('src', `assets/models/${models[i++ % 2]}`), 2000);
-    
+
 </script>
 
 
