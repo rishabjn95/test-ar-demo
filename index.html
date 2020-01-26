@@ -57,21 +57,25 @@
 <body>
 
   <model-viewer id="toggle-model"
-  src="../shared-assets/models/SM_Cabin.gltf"
+  src="../shared-assets/models/FarmHouse.gltf"
   alt="A 3D model of a shishkebab"
+  ar-scale="fixed"
   background-color="#eee"
-  shadow-intensity="1"
+  autoplay shadow-intensity="1"
+  animation-name="Running"
   camera-controls
-  auto-rotate></model-viewer>
+  auto-rotate
+  ></model-viewer>
 
 <script>
     const models = ['SM_Cabin.gltf', 'FarmHouse.gltf'];
     const toggleModel = document.querySelector('#toggle-model');
     let i = 0;
     setInterval(() => toggleModel.setAttribute('src', `assets/models/${models[i++ % 2]}`), 2000);
+    play();
 </script>
 
-  
+
   </model-viewer>
 </body>
 </html>
