@@ -45,7 +45,13 @@
                 alt="A 3D model of a House" background-color="#70BCD1">
 
   </model-viewer>
+  <script>
+      const models = ['SM_Cabin.gltf', 'FarmHouse.gltf'];
+      const toggleModel = document.querySelector('#toggle-model');
+      let i = 0;
+      setInterval(() => toggleModel.setAttribute('src', `assets/${models[i++ % 2]}`), 2000);
 
+  </script>
   <model-viewer src="assets/FarmHouse.gltf"
               ios-src="assets/RocketShip_1393.usdz"
               ar
@@ -60,20 +66,22 @@
   src="assets/FarmHouse.gltf"
   alt="A 3D model of a shishkebab"
   ar
-  ar-scale="auto"
+  background-color="#eee"
+  shadow-intensity="1"
+  camera-controls
+  auto-rotate
+  ></model-viewer>
+  
+  <model-viewer id="toggle-model"
+  src="assetsSM_Cabin.gltf"
+  alt="A 3D model of a shishkebab"
+  ar
   background-color="#eee"
   shadow-intensity="1"
   camera-controls
   auto-rotate
   ></model-viewer>
 
-<script>
-    const models = ['SM_Cabin.gltf', 'FarmHouse.gltf'];
-    const toggleModel = document.querySelector('#toggle-model');
-    let i = 0;
-    setInterval(() => toggleModel.setAttribute('src', `assets/${models[i++ % 2]}`), 2000);
-
-</script>
 
 
   </model-viewer>
